@@ -52,7 +52,6 @@ class AppTheme {
     ThemeData themeData = ThemeData(
       scaffoldBackgroundColor: Colors.black26,
       colorScheme: const ColorScheme(
-        background: Colors.black87,
         brightness: Brightness.light,
         primary: AppColors.primary,
         onPrimary: Colors.white,
@@ -60,7 +59,6 @@ class AppTheme {
         onSecondary: Colors.white,
         error: AppColors.error,
         onError: Colors.white,
-        onBackground: Colors.black87,
         surface: Colors.white,
         onSurface: Colors.grey,
       ),

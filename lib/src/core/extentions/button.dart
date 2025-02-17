@@ -4,7 +4,7 @@ import 'package:flutter/material.dart'
         BorderStyle,
         ButtonStyle,
         EdgeInsets,
-        MaterialStatePropertyAll,
+        WidgetStatePropertyAll,
         OutlinedButtonThemeData;
 
 import '../../config/themes/colors.dart';
@@ -12,7 +12,7 @@ import '../../config/themes/colors.dart';
 extension OutlineButtonStyle on OutlinedButtonThemeData {
   ButtonStyle? outline() {
     return style?.copyWith(
-      side: const MaterialStatePropertyAll(
+      side: const WidgetStatePropertyAll(
         BorderSide(
           width: 1.0,
           style: BorderStyle.solid,
@@ -24,14 +24,14 @@ extension OutlineButtonStyle on OutlinedButtonThemeData {
 
   ButtonStyle? outlineDisabled() {
     return style?.copyWith(
-      side: const MaterialStatePropertyAll(
+      side: const WidgetStatePropertyAll(
         BorderSide(
           width: 1.0,
           style: BorderStyle.solid,
           color: AppColors.greyLight,
         ),
       ),
-      backgroundColor: const MaterialStatePropertyAll(
+      backgroundColor: const WidgetStatePropertyAll(
         AppColors.greyLight,
       ),
     );
@@ -39,7 +39,7 @@ extension OutlineButtonStyle on OutlinedButtonThemeData {
 
   ButtonStyle? icon() {
     return outline()?.copyWith(
-      padding: const MaterialStatePropertyAll(
+      padding: const WidgetStatePropertyAll(
         EdgeInsets.symmetric(
           horizontal: 16,
           vertical: 12,

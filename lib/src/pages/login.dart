@@ -75,7 +75,7 @@ class _LoginState extends State<Login> {
                   return;
                 },
                 style: Theme.of(context).outlinedButtonTheme.style?.copyWith(
-                      side: const MaterialStatePropertyAll(
+                      side: const WidgetStatePropertyAll(
                         BorderSide(
                           width: 1.0,
                           style: BorderStyle.solid,

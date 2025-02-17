@@ -74,7 +74,7 @@ extension BuildContextEntension<T> on BuildContext {
 
   Color get errorColor => Theme.of(this).colorScheme.error;
 
-  Color get background => Theme.of(this).colorScheme.background;
+  Color get background => Theme.of(this).colorScheme.surface;
 
   /*------------------ bottom sheet and snackbar  --------------*/
 
